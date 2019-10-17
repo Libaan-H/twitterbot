@@ -30,10 +30,10 @@ api = tweepy.API(auth, wait_on_rate_limit=True,
 
 # Search Like Follow
 def slf():
-    db = open("seen.db","r")
+    db = open("processed.db","r")
     seenids = db.readlines()
     db.close
-    db = open("seen.db","w+")
+    db = open("processed.db","w+")
     tweetnum=1
     # print symbol to indicate start
     print("-", end = "")
